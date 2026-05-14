@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP Array Program</title>
+</head>
+<body>
+
+    <h1>PHP Array Example</h1>
+
+    <?php
+
+        // Create an array
+        $subjects = array("HTML", "CSS", "JavaScript", "PHP", "MySQL");
+
+        echo "<h3>Stored Values in Array:</h3>";
+
+        // Display values using foreach loop
+        foreach($subjects as $value)
+        {
+            echo $value . "<br>";
+        }
+
+        echo "<br>";
+
+        // Array functions
+        echo "<b>Total Elements in Array:</b> ";
+        echo count($subjects);
+
+        echo "<br><br>";
+
+        echo "<b>First Element:</b> ";
+        echo $subjects[0];
+
+        echo "<br><br>";
+
+        echo "<b>Last Element:</b> ";
+        echo end($subjects);
+
+    ?>
+
+</body>
+</html>
