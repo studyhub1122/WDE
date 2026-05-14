@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details</title>
+</head>
+<body>
+
+    <h1><u>My Personal Details</u></h1>
+
+    <p><b>Name:</b> Om Jadhav</p>
+
+    <p><i>Course:</i> Bachelor of Computer Science</p>
+
+    <p><u>College Name:</u> XYZ College, Aurangabad</p>
+
+    <p><mark>Hobbies:</mark> Reading, Coding, Playing Cricket</p>
+
+    <p>Water Formula: H<sub>2</sub>O</p>
+
+    <p>Math Formula: x<sup>2</sup> + y<sup>2</sup></p>
+
+    <p><b>Email:</b> omjadhav@gmail.com</p>
+
+</body>
+</html>
