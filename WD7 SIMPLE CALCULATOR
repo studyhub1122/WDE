@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <script>
+
+        // Function for calculation
+        function calculate() {
+
+            // Get input values
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operation = document.getElementById("operation").value;
+
+            var result;
+
+            // Switch case for operations
+            switch(operation) {
+
+                case "+":
+                    result = num1 + num2;
+                    break;
+
+                case "-":
+                    result = num1 - num2;
+                    break;
+
+                case "*":
+                    result = num1 * num2;
+                    break;
+
+                case "/":
+                    if(num2 == 0) {
+                        result = "Cannot divide by zero";
+                    } else {
+                        result = num1 / num2;
+                    }
+                    break;
+
+                default:
+                    result = "Invalid Operation";
+            }
+
+            // Display result
+            document.getElementById("answer").innerHTML =
+                "Result = " + result;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Simple JavaScript Calculator</h1>
+
+    <!-- First Number -->
+    <label>Enter First Number:</label><br>
+    <input type="number" id="num1"><br><br>
+
+    <!-- Second Number -->
+    <label>Enter Second Number:</label><br>
+    <input type="number" id="num2"><br><br>
+
+    <!-- Operation -->
+    <label>Select Operation:</label><br>
+
+    <select id="operation">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+    </select>
+
+    <br><br>
+
+    <!-- Button -->
+    <button onclick="calculate()">
+        Calculate
+    </button>
+
+    <h2 id="answer"></h2>
+
+</body>
+</html>
