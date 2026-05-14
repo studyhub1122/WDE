@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h2{
+            color: blue;
+            text-align: center;
+        }
+
+        p{
+            font-size: 18px;
+            color: green;
+        }
+
+        table{
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: lightgray;
+        }
+    </style>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color:red; text-align:center;">
+        Welcome to CSS Demo
+    </h1>
+
+    <!-- Internal CSS Applied -->
+    <h2>Internal CSS Example</h2>
+
+    <p>
+        This paragraph is styled using internal CSS.
+    </p>
+
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial;
+}
