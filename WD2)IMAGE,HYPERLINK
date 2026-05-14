@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image, Link and Nested Table</title>
+</head>
+<body>
+
+    <h1>My Simple Webpage</h1>
+
+    <!-- Image -->
+    <h2>Image Example</h2>
+    <img src="https://via.placeholder.com/200"
+         alt="Sample Image"
+         width="200" height="200">
+
+    <!-- Hyperlink -->
+    <h2>Website Link</h2>
+    <p>
+        Visit 
+        <a href="https://www.google.com" target="_blank">
+            Google Website
+        </a>
+    </p>
+
+    <!-- Nested Table -->
+    <h2>Nested Table Example</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Main Table</th>
+            <th>Nested Table</th>
+        </tr>
+
+        <tr>
+            <td>Computer Science</td>
+
+            <td>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+
+                    <tr>
+                        <td>HTML</td>
+                        <td>85</td>
+                    </tr>
+
+                    <tr>
+                        <td>PHP</td>
+                        <td>90</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
